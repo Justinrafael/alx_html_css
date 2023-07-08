@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                border: 3px solid black;
+                height: 200vh;
+                padding: 10px;
+            }
+            header {
+                border: 2px solid black;
+                height: 40px;
+                padding: 10px;
+                padding-bottom: 15px;
+            }
+            header div {
+                border: 1px solid black;
+                /** height inherit **/
+                background-color: antiquewhite;
+                display: flex;
+                justify-content: space-between;
+                padding: 2px;
+            }
+            header div div {
+                border: 1px solid red;
+                width: 250px;
+                border-radius:10px ;
+                height:30px;
+                padding: 5px;
+            }
+            header div div a {
+                border: 2px solid green;
+                width: inherit;
+                display: flex;
+                justify-content: center;
+            }
+            main {
+              border: 2px solid black;
+              height: 167vh;
+              margin-top: 5px;
+              padding: 5px;
+            }
+            /* section 1 */
+            main section {
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 34vh;
+            }
+            .flex1 {
+                border: 1px solid black;
+                width:30%;
+                margin-top: 2px;
+            }
+            .flex1 h1 {
+                border: 1px solid blue;
+                margin: 0;
+                text-align: center;
+            }
+            .flex1 p {
+                border: 1px solid purple;
+                margin: 0;
+                text-align: center;
+            }
+            .flex1 button {
+                border: 1px solid orange;
+                width: 100%;
+            }
+            .flex2 {
+                border: 1px solid black;
+                width: 80%;
+                margin: 3px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 40vh;
+            }
+            .flex2 h3 {
+                border: 1px solid blue;
+                margin: 0;
+                width:36% ;
+                text-align: center;
+            }
+            .flex3 {
+                border: 1px solid black;
+                width: 99%;
+                height: 16vh;
+                margin: 2px;
+                display: flex;
+            }
+            .flex4 {
+                border: 1px solid black;
+                width: 24%;
+                margin-right: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .flex4 h3 {
+                border: 1px solid green;
+                width: 100%;
+                height: 34%;
+                margin: px;
+            }
+            .flex4 p {
+                border: 1px solid blue;
+                margin: 0;
+                text-align: center;
+                width: 100%;
+                height: 33%;
+            }
+            .flex5 {
+                 border: 1px solid black;
+                 width: 24%;
+                 margin-right: 20px;
+                 display: flex;
+                 flex-direction: column;
+            }
+            .flex5 h3 {
+                border: 1px solid green;
+                width: 100%;
+                height: 34%;
+                margin: px;
+            }
+            .flex5 p {
+                border: 1px solid blue;
+                margin: 0;
+                text-align: center;
+                width: 100%;
+                height: 33%;
+            }
+            .flex6 {
+                border: 1px solid black;
+                width: 24%;
+                margin-right: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .flex6 h3 {
+                border: 1px solid green;
+                width: 100%;
+                height: 34%;
+                margin: px;
+            }
+            .flex6 p {
+                border: 1px solid blue;
+                margin: 0;
+                text-align: center;
+                width: 100%;
+                height: 33%;
+            }
+            .flex7 {
+                border: 1px solid black;
+                width: 24%;
+                margin-right:0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .flex7 h3 {
+                border: 1px solid green;
+                width: 100%;
+                height: 34%;
+                margin: px;
+            }
+            .flex7 p {
+                border: 1px solid blue;
+                margin: 0;
+                text-align: center;
+                width: 100%;
+                height: 33%;
+            }
+            /* End of section1*/
+
+            /* Section 2*/
+            #section2 {
+                border: 1px solid black;
+                margin: 2px;
+                display: flex;
+                justify-content: center;
+                height: 30vh;
+            }
+            .flex8 {
+                border: 1px solid black;
+                display: flex;
+                width: 30%;
+                height: 90%;
+            }
+            .flex8 h3 {
+                border: 1px solid green;
+                margin-top: 1px;
+                margin-right: 2px;
+                margin-left: 2px;
+                height: 25%;
+                width: 40%;
+                text-align: center;
+            }
+            .flex9 {
+                border: 1px solid black;
+                margin-top: 1px;
+                margin-right: 1px;
+                margin-bottom: 1px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60%;
+            }
+            .flex9 h3 {
+                border: 1px solid purple;
+                width: 99%;
+                height: 34%;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .flex9 p {
+                border: 1px solid purple;
+                margin-top: 0;
+                text-align: center;
+                width: 99%;
+                height: 33%;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            /* end of section 2*/
+
+            /* Section 3*/
+            #section3 {
+                border: 1px solid black;
+                height: 30vh;
+            }
+            #section3 h3 {
+                border: 1px solid blue;
+                margin: 2px;
+                width: 10%;
+                text-align: center;
+            }
+            .flex10 {
+                border: 1px solid black;
+                width: 55%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+            }
+            .flex11 {
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 23%;
+                margin-left: 15px;
+                margin-right: 10px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                height: 23vh;
+            }
+            .flex11 h4 {
+                border: 1px solid green;
+                width: 99%;
+                margin: 0;
+                height: 20%;
+                text-align: center;
+            }
+            .flex11 p {
+                border: 1px solid blue;
+                width: 99%;
+                height: 20%;
+                text-align: center;
+            }
+            .subflex1 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+                width: 99%;
+                margin-top: 0;
+                text-align: center;
+            }
+            .subflex1 div {
+                border: 1px solid blue;
+                text-align: center;
+                width: 88px;
+            }
+            .subflex1 h5 {
+                border: 1px solid green;
+                width: 50%;
+                margin: 0;
+                margin-left: 1px;
+            }
+            .subflex2 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+
+            }
+            .subflex2 div {
+                border: 1px solid green;
+                margin-left: 0;
+                margin-right: 2px;
+                width: 99px;
+            }
+            .subflex2 h4 {
+                border: 1px solid purple;
+                height: 99%;
+                text-align: center;
+            }
+            .flex12 {
+                border: 1px solid black;
+                width: 23%;
+                margin-right: 10px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                display: flex;
+                flex-direction: column;
+            }
+            .flex12 h4 {
+                border: 1px solid green;
+                width: 99%;
+                margin: 0;
+                height: 20%;
+                text-align: center;
+            }
+            .flex12 p {
+                border: 1px solid blue;
+                width: 99%;
+                height: 20%;
+                text-align: center;
+            }
+            .subflex1 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+                width: 99%;
+                margin-top: 0;
+                text-align: center;
+            }
+            .subflex1 div {
+                border: 1px solid blue;
+                text-align: center;
+                width: 88px;
+            }
+            .subflex1 h5 {
+                border: 1px solid green;
+                width: 50%;
+                margin: 0;
+                margin-left: 1px;
+            }
+            .subflex2 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+
+            }
+            .subflex2 div {
+                border: 1px solid green;
+                margin-left: 0;
+                margin-right: 2px;
+                width: 99px;
+            }
+            .subflex2 h4 {
+                border: 1px solid purple;
+                height: 99%;
+                text-align: center;
+            }
+            .flex13 {
+                border: 1px solid black;
+                width: 23%;
+                margin-right: 10px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                display: flex;
+                flex-direction: column;
+            }
+            .flex13 h4 {
+                border: 1px solid green;
+                width: 99%;
+                margin: 0;
+                height: 20%;
+                text-align: center;
+            }
+            .flex13 p {
+                border: 1px solid blue;
+                width: 99%;
+                height: 20%;
+                text-align: center;
+            }
+            .subflex1 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+                width: 99%;
+                margin-top: 0;
+                text-align: center;
+            }
+            .subflex1 div {
+                border: 1px solid blue;
+                text-align: center;
+                width: 88px;
+            }
+            .subflex1 h5 {
+                border: 1px solid green;
+                width: 50%;
+                margin: 0;
+                margin-left: 1px;
+            }
+            .subflex2 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+
+            }
+            .subflex2 div {
+                border: 1px solid green;
+                margin-left: 0;
+                margin-right: 2px;
+                width: 99px;
+            }
+            .subflex2 h4 {
+                border: 1px solid purple;
+                height: 99%;
+                text-align: center;
+            }
+            .flex14 {
+                border: 1px solid black;
+                width: 23%;
+                margin-right: 10px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                display: flex;
+                flex-direction: column;
+            }
+            .flex14 h4 {
+                border: 1px solid green;
+                width: 99%;
+                margin: 0;
+                height: 20%;
+                text-align: center;
+            }
+            .flex14 p {
+                border: 1px solid blue;
+                width: 99%;
+                height: 20%;
+                text-align: center;
+            }
+            .subflex1 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+                width: 99%;
+                margin-top: 0;
+                text-align: center;
+            }
+            .subflex1 div {
+                border: 1px solid blue;
+                text-align: center;
+                width: 88px;
+            }
+            .subflex1 h5 {
+                border: 1px solid green;
+                width: 50%;
+                margin: 0;
+                margin-left: 1px;
+            }
+            .subflex2 {
+                border: 1px solid black;
+                height: 20%;
+                display: flex;
+
+            }
+            .subflex2 div {
+                border: 1px solid green;
+                margin-left: 0;
+                margin-right: 2px;
+                width: 99px;
+            }
+            .subflex2 h4 {
+                border: 1px solid purple;
+                height: 99%;
+                text-align: center;
+            }
+            /*End of section 3*/
+
+            /* Section 4*/
+            #section4 {
+                border: 1px solid black;
+                height: 30vh;
+                margin-top: 2px;
+            }
+            #section4 h3 {
+                border: 1px solid blue;
+                margin: 2px;
+                width: 10%;
+                text-align: center;
+            }
+            .rose {
+                border: 1px solid black;
+                width: 99%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+            }
+            .rose1 {
+                border: 1px solid black;
+                height: 97%;
+                width: 20%;
+                margin-right: 3px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .rose1 h4 {
+                border: 1px solid green;
+                width: 99%;
+                height: 34%;
+                margin: 0;
+                text-align: center;
+            }
+            .rose1 p {
+                border: 1px solid blue;
+                width: 99%;
+                height: 33%;
+                margin: 0;
+                text-align: center;
+            }
+            #section4 button {
+                border: 1px solid orange;
+                margin-top: 2px;
+                width: 10%;
+                text-align: center;
+                margin-bottom: 2px;
+            }
+            /* End of section 4*/
+
+            /* Section 5*/
+            #section5 {
+                border: 1px solid black;
+                height: 40vh;
+                margin: 2px;
+            }
+            #section5 h3 {
+                border: 1px solid blue;
+                margin: 2px;
+                width: 10%;
+                text-align: center;
+            }
+            .lily {
+                border: 1px solid black;
+                width: 40%;
+                height: 88%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .lily1 {
+                border: 1px solid black;
+                height: 50%;
+                width: 99%;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                display: flex;
+            }
+            .lily1a {
+                border: 1px solid black;
+                width: 50%;
+                height: 99%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .lily1a h4 {
+            border: 1px solid blue;
+            width: 99%;
+            height: 50%;
+            margin-top: 2px;
+            margin-bottom: 0;
+            text-align: center;
+            }
+            .lily1a p {
+                border: 1px solid purple;
+                width: 99%;
+                text-align: center;
+                height: 50%;
+                margin-top: 1px;
+                margin-bottom: 1px;
+            }
+            /* End of section 5*/
+
+            /* Footer*/
+            #sectionf {
+                border: 2px solid black;
+                height: 18vh;
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+            .footer {
+                border: 1px solid black;
+                width: 100%;
+                height: 95%;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                margin-left: 2px;
+                margin-right: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer h3 {
+                border: 1px solid purple;
+                width: 10%;
+                height: 20%;
+                margin-bottom: 2px;
+                text-align: center;
+             }
+            .footer1 {
+                border: 1px solid black;
+                height: 90%;
+                width: 99%;
+                margin-top: 5px;
+                margin-bottom: 0;
+                margin-left: 3px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .footer1a {
+                border: 1px solid black;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 2px;
+                width: 10%;
+            }
+            .footer1a h4 {
+                border: 1px solid green;
+                margin-top: 2px;
+                margin-bottom: 1px;
+                margin-left: 2px;
+                text-align: center;
+                height:90%;
+            }
+            .footer1b {
+                border: 1px solid black;
+                width: 20%;
+                margin-top: 5px;
+                margin-right: 2px;
+                margin-bottom: 2px;
+                display: flex;
+            }
+            .footer1b div {
+                border: 1px solid orangered;
+                width: 33%;
+                margin-right: 1px;
+                display: flex;
+                justify-content: center;
+            }
+            .footer1b div h5 {
+                border: 1px solid green;
+                text-align: center;
+                height: 99%;
+                width: 99%;
+                margin: 0;
+            }
+            /*End of footer*/
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="Logo">
+                <!-- LOGO -->
+                <div>
+                    <a href="#">
+                        <span>LOGO</span>
+                    </a>
+                </div>
+                <!-- END OF LOGO -->
+
+                <!-- Navigation links-->
+                <div>
+                    <a href="#">LINK</a>
+                    <a href="#">LINK</a>
+                    <a href="#">LINK</a>
+                </div>
+                <!-- End of Navigation links-->
+            </div>
+        </header>
+        <!--MAIN BODY-->
+        <main>
+            <!--SECTION 1-->
+            <!-- flex1 to flex7 are all div classes in section 1-->
+            <section id="section1">
+                <div class="flex1">
+                    <h1>TITLE</h1>
+                    <p>3 WORDS</p>
+                    <button>BUTTON</button>
+                </div>
+                <div class="flex2">
+                    <h3>TITLE</h3>
+                    <div class="flex3">
+                        <div class="flex4">
+                            <h3>IMAGE</h3>
+                            <p>NAME</p>
+                            <p style="border: 1px solid purple;">SUB-TITLE</p>
+                        </div>
+                        <div class="flex5">
+                            <h3>IMAGE</h3>
+                            <p>NAME</p>
+                            <p style="border: 1px solid purple;">SUB-TITLE</p> 
+                        </div>
+                        <div class="flex6">
+                            <h3>IMAGE</h3>
+                            <p>NAME</p>
+                            <p style="border: 1px solid purple;">SUB-TITLE</p>
+                        </div>
+                        <div class="flex7">
+                            <h3>IMAGE</h3>
+                            <p>NAME</p>
+                            <p style="border: 1px solid purple;" >SUB-TITLE</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END OF SECTION 1-->
+
+            <!--SECTION 2-->         
+            <section id="section2">
+                <div class="flex8">
+                    <h3>IMAGE</h3>
+                    <div class="flex9">
+                        <h3>QUOTE</h3>
+                        <p>AUTHOR</p>
+                        <p style="border: 1px solid purple;" >SUB-TITLE</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--END OF SECTION 2-->
+
+            <!--SECTION 3-->
+            <section id="section3">
+                <h3>TITLE</h3>
+                <div class="flex10">
+                    <div class="flex11">
+                        <h4>IMAGE</h4>
+                        <h4>TITLE</h4>
+                        <p style="border: 1px solid purple; margin: 0;">TEXT</p>
+                        <div class="subflex1">
+                            <h5>IMAGE</h5>
+                            <div>TITLE</div>
+                        </div>
+                        <div class="subflex2">
+                            <div>IMAGES</div>
+                            <h4>TEXT</h4>
+                        </div>
+                    </div>
+                    <div class="flex12">
+                        <h4>IMAGE</h4>
+                        <h4>TITLE</h4>
+                        <p style="border: 1px solid purple; margin: 0;">TEXT</p>
+                        <div class="subflex1">
+                            <h5>IMAGE</h5>
+                            <div>TITLE</div>
+                        </div>
+                        <div class="subflex2">
+                            <div>IMAGES</div>
+                            <h4>TEXT</h4>
+                        </div>
+                    </div>
+                    <div class="flex13">
+                        <h4>IMAGE</h4>
+                        <h4>TITLE</h4>
+                        <p style="border: 1px solid purple; margin: 0;">TEXT</p>
+                        <div class="subflex1">
+                            <h5>IMAGE</h5>
+                            <div>TITLE</div>
+                        </div>
+                        <div class="subflex2">
+                            <div>IMAGES</div>
+                            <h4>TEXT</h4>
+                        </div>
+                    </div>
+                    <div class="flex14">
+                        <h4>IMAGE</h4>
+                        <h4>TITLE</h4>
+                        <p style="border: 1px solid purple; margin: 0;">TEXT</p>
+                        <div class="subflex1">
+                            <h5>IMAGE</h5>
+                            <div>TITLE</div>
+                        </div>
+                        <div class="subflex2">
+                            <div>IMAGES</div>
+                            <h4>TEXT</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END OF SECTION 3-->
+            
+            <!-- SECTION 4-->
+            <section id="section4">
+                <h3>TITLE</h3>
+                <div class="rose">
+                    <div class="rose1">
+                        <h4>IMAGE</h4>
+                        <p>TITLE</p>
+                        <p style="border: 1px solid purple;">TEXT</p>
+                    </div>
+                    <div class="rose1">
+                        <h4>IMAGE</h4>
+                        <p>TITLE</p>
+                        <p style="border: 1px solid purple;">TEXT</p>
+                    </div>
+                    <div class="rose1">
+                        <h4>IMAGE</h4>
+                        <p>TITLE</p>
+                        <p style="border: 1px solid purple;">TEXT</p>
+                    </div>
+                    <div class="rose1">
+                        <h4>IMAGE</h4>
+                        <p>TITLE</p>
+                        <p style="border: 1px solid purple;">TEXT</p>
+                    </div>
+                </div>
+                <button>BUTTON</button>
+            </section>
+            <!-- END OF SECTION 4 -->
+
+            <!-- SECTION 5-->
+            <section id="section5">
+                <h3>TITLE</h3>
+                <div class="lily">
+                    <div class="lily1">
+                        <div class="lily1a">
+                            <h4>TITLE</h4>
+                            <p>TEXT</p>
+                        </div>
+                        <div class="lily1a">
+                            <h4>TITLE</h4>
+                            <p>TEXT</p>
+                        </div>
+                    </div>
+                    <div class="lily1">
+                        <div class="lily1a">
+                            <h4>TITLE</h4>
+                            <p>TEXT</p>
+                        </div>
+                        <div class="lily1a">
+                            <h4>TITLE</h4>
+                            <p>TEXT</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END OF SECTION 5-->
+        </main>
+        <!--END OF MAIN BODY-->
+
+        <!--FOOTER-->
+        <footer>
+            <section id="sectionf">
+                <div class="footer">
+                    <div class="footer1">
+                        <div class="footer1a">
+                            <h4>LOGO</h4>
+                        </div>
+                        <div class="footer1b">
+                            <div>
+                                <h5>IMAGE</h5>
+                            </div>
+                            <div>
+                                <h5>IMAGE</h5>
+                            </div>
+                            <div>
+                                <h5>IMAGE</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>TEXT</h3>
+                </div>
+            </section>
+        </footer>
+        <!--END OF FOOTER-->
+    </body>
+</html>
