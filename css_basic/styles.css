@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+header {
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px blue;
+}
+h1, h2, h3 {
+    font-family: gabriola;
+    background-color: cadetblue;
+    border-color: black;
+    text-shadow: 1px 4px darkslategray;
+    text-align: center;
+    box-shadow: 2px 2px blue;
+    font-size: xx-large;
+}
+article {
+    flex: 2;
+    overflow-y: auto;
+    background-color: beige;
+    box-shadow: 2px 2px 5px blue;
+}
+aside {
+    flex: 1;
+    background-color: aliceblue;
+    font-family: gabriola;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: 1px 1px royalblue;
+    box-shadow: 2px 2px 5px blue;
+}
+
+footer {
+    border: 1px solid black;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 10px black;
+    font-family: gabriola; 
+    font-size: x-large;
+}
